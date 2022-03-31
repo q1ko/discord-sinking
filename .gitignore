@@ -1,0 +1,4 @@
+.env
+.vscode/settings.json
+cogs/__pycache__/__init__.cpython-310.pyc
+cogs/__pycache__/verify.cpython-310.pyc
