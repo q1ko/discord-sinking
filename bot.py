@@ -6,7 +6,8 @@ import discord
 
 prefix = ""
 intents = discord.Intents.default()
-bot = commands.Bot(command_prefix=prefix,intents=intents)
+intents.guilds = True
+bot = commands.Bot(command_prefix=prefix, intents=intents)
 
 
 @bot.event
