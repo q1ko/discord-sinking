@@ -9,7 +9,7 @@ from discord import (
 )
 import discord
 
-gid = ["959045964054806570", "959058837564960819", "859217307321499678"]
+gid = ["859217307321499678"]
 vchnl = {}
 vrole = {}
 banmsg = {
@@ -144,4 +144,6 @@ class Verify(commands.Cog):
 
         vrole[ctx.guild_id] = role
         await ctx.respond(f"{role.mention} is now the verified role.", delete_after=8)
-    
+
+def setup(bot):
+    bot.add_cog(Verify(bot))
